@@ -1,0 +1,31 @@
+session_name: tmuxp
+start_directory: ./ # load session relative to config location (project root).
+windows:
+  - window_name: core
+    start_directory: ./core
+    panes:
+      - make ubnt
+  - window_name: worker
+    start_directory: ./worker
+    panes:
+      - pane
+  - window_name: private-gql
+    start_directory: ./monorepo/packages/private-gql
+    panes:
+      - pane
+  - window_name: "admin"
+    start_directory: ./monorepo/packages/admin-ui
+    panes:
+      - pane
+  - window_name: public-gql
+    start_directory: ./monorepo/packages/public-gql
+    panes:
+      - pane
+  - window_name: "starbargains"
+    start_directory: ./monorepo/packages/starbargains
+    panes:
+      - pane
+  - window_name: "_spare_"
+    start_directory: .
+    panes:
+      - pane

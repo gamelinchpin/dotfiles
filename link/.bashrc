@@ -118,7 +118,7 @@ fi
 
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit
-for file in ~/.{git_prompt,extra,exports,aliases,functions}; do
+for file in ~/.{extra,exports,aliases,functions}; do
 	[ -r "$file" ] && source "$file"
 done
 
@@ -132,7 +132,7 @@ export PATH="$(yarn global bin):$PATH"
 
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/simeon/google-cloud-sdk/path.bash.inc' ]; then . '/home/simeon/google-cloud-sdk/path.bash.inc'; fi
+if [ -f '~/google-cloud-sdk/path.bash.inc' ]; then . '~/google-cloud-sdk/path.bash.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/home/simeon/google-cloud-sdk/completion.bash.inc' ]; then . '/home/simeon/google-cloud-sdk/completion.bash.inc'; fi
+if [ -f '~/google-cloud-sdk/completion.bash.inc' ]; then . '~/google-cloud-sdk/completion.bash.inc'; fi
