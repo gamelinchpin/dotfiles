@@ -20,10 +20,7 @@ recipes=(
   jq
   lesspipe
   man2html
-  mercurial
   nmap
-  postgresql
-  powerline-go
   reattach-to-user-namespace
   sl
   smartmontools
